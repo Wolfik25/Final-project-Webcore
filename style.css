@@ -516,7 +516,7 @@
   margin-left: 16px;
   margin-bottom: 0;
   text-decoration: none;
-  font-family: 'TT Lakes';
+  font-family: "TT Lakes";
   font-weight: 500;
   font-style: normal; }
   .nav-main__item:hover {
@@ -661,7 +661,7 @@
 
 .feedback-div,
 .callback-div,
-.aside-div {
+.aside-blur {
   z-index: 100;
   width: 100%;
   height: 100%; }
@@ -806,7 +806,7 @@
     height: 12px;
     background-color: #B5B6BC; }
 
-.card {
+.brand-card {
   width: 240px !important;
   background-repeat: no-repeat;
   height: 72px;
@@ -819,13 +819,13 @@
   padding: 0;
   overflow: hidden; }
   @media (min-width: 767px) {
-    .card {
+    .brand-card {
       width: 231px !important; } }
   @media (min-width: 1027px) {
-    .card {
+    .brand-card {
       margin-right: 50px; } }
   @media (min-width: 1120px) {
-    .card {
+    .brand-card {
       margin-right: 16px;
       width: 240px !important;
       margin-left: 16px; } }
@@ -1104,7 +1104,7 @@
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   z-index: 101; }
 
-.aside-div {
+.aside-blur {
   position: fixed; }
 
 /*--------------------------------ШАПКА-----------------------------------*/
@@ -1323,7 +1323,8 @@ a[href^="tel:"] {
   background-color: white;
   cursor: pointer; }
 
-.burger-close {
+.burger-close,
+.burger-close-aside {
   background-image: url(./static/burger.svg);
   margin-left: 24px;
   padding: 0;
@@ -1384,7 +1385,8 @@ a[href^="tel:"] {
   background-color: #41F6D7;
   border-radius: 10px; }
 
-.image-aside:hover, .link-aside:hover {
+.image-aside:hover,
+.link-aside:hover {
   transition-duration: 1s;
   transform: scale(1);
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1407,7 +1409,7 @@ a[href^="tel:"] {
     position: relative;
     text-decoration: none;
     color: black;
-    font-family: 'TT Lakes';
+    font-family: "TT Lakes";
     font-weight: 600;
     font-style: normal; }
     .offer-get::after {
@@ -1428,8 +1430,8 @@ a[href^="tel:"] {
   margin-left: 16px;
   margin-top: 40px;
   text-align: center;
-  border-top: 2px solid #D9FFF5;
-  color: #7E7E82; }
+  border-top: 2px solid #d9fff5;
+  color: #7e7e82; }
   @media (min-width: 768px) {
     .footer {
       flex-direction: row;
@@ -1443,7 +1445,7 @@ a[href^="tel:"] {
         margin-left: 8px; } }
   .footer__privacy-policy {
     text-decoration: none;
-    color: #7E7E82; }
+    color: #7e7e82; }
   @media (min-width: 768px) {
     .footer__info {
       width: 213px;
@@ -1457,28 +1459,31 @@ a[href^="tel:"] {
       text-align: end;
       margin-right: 24px; } }
 
-.footer__privacy-policy:hover, .offer-get:hover:after, .offer-get:hover, .card3__button:hover {
+.footer__privacy-policy:hover,
+.offer-get:hover:after,
+.offer-get:hover,
+.card3__button:hover {
   transition-duration: 1s;
   transform: scale(1);
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   color: #000;
-  background-color: #41F6D7;
+  background-color: #41f6d7;
   border-radius: 5px; }
 
 @font-face {
-  font-family: 'TT Lakes';
+  font-family: "TT Lakes";
   src: url(./fonts/TTLakes-Regular.woff) format("woff"), url(./fonts/TTLakes-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'TT Lakes';
+  font-family: "TT Lakes";
   src: url(./fonts/TTLakes-ExtraBold.woff) format("woff"), url(./fonts/TTLakes-ExtraBold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
-  font-family: 'TT Lakes';
+  font-family: "TT Lakes";
   src: url(./fonts/TTLakes-Medium.woff) format("woff"), url(./fonts/TTLakes-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
@@ -1488,7 +1493,8 @@ body {
   background-color: #f2f2f2; }
   @media (min-width: 1120px) {
     body {
-      display: flex; } }
+      display: flex;
+      flex-direction: row-reverse; } }
 
 .page {
   max-width: 1120px;
